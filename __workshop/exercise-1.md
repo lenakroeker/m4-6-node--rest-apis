@@ -17,3 +17,21 @@ Write out each endpoint, its method, and brief description of waht it should do.
 _This activity is more about the discussion in how to best organize data endpoints. There will not be any coding._
 
 ## Your Answer
+
+| endpoint | method | Description            |
+| -------- | ------ | ---------------------- |
+| `/clients`  | `POST`  | add new customer account                                      |
+|-----------------------------------------------------------------------------------------|
+| `/clients/(:clientId)`  | `GET`  | retrieve customer info (specific customer by id) |
+|-----------------------------------------------------------------------------------------|
+| `/clients/(:clientId)` | `DELETE`   |   remove customer from database               |
+|-----------------------------------------------------------------------------------------|
+| `/inventory/(:itemId)`  | `GET`   | view current inventory (specific item in invertory) |
+|-----------------------------------------------------------------------------------------|
+| `/inventory`  | `PATCH` | update inventory when item sold / added                       |
+|-----------------------------------------------------------------------------------------|
+| `/inventory/(:itemId)`  | `DELETE` | view current inventory (specific item in inventory)|
+|-----------------------------------------------------------------------------------------|
+| `/seating/(:seatId)`   |  `GET`  | retrieve information about seating (specific seat)   |
+|-----------------------------------------------------------------------------------------|
+|  `/seating/(:seatId)`  | `PATCH`  | update seating info (specific seat)                                          |
